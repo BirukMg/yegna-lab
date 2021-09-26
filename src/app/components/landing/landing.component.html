@@ -1,0 +1,28 @@
+<div class="landing d-flex justify-content-center align-items-center position-relative flex-wrap">
+  <img src="../../../assets/img/yegna_logo.svg" class="landing__logo position-absolute" alt="" width="5%">
+  <img src="../../../assets/img/landing-bg.svg" class="landing__bg position-absolute" alt="" width="100%">
+  <img src="../../../assets/img/bubbles.svg" class="landing__bg position-absolute" alt="" width="100%">
+  <div class="landing__slider">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <img class="landing__slider-item" src="../../../assets//img/chemicals.png" alt="" width="70%">
+      </ng-template>
+      <ng-template carouselSlide>
+        <img class="landing__slider-item" src="../../../assets//img/model.png" alt="" width="70%">
+      </ng-template>
+      <ng-template carouselSlide>
+        <img class="landing__slider-item" src="../../../assets//img/lab-tool.png" alt="" width="70%">
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+
+  <div class="landing__desc d-flex align-items-center justify-content-center flex-column">
+    <h1>Yegna lab</h1>
+    <div class="d-flex align-items-center">
+      <div class="landing__desc__letter-o"></div>
+      <span class="landing__desc__urs">urs,</span>
+      <span class="landing__desc__yours">Yours</span>
+    </div>
+    <button class="py-2 px-5">Get Now</button>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+@font-face {
+  font-family: fertigo;
+  src: url(./assets/fonts/Fertigo_pro_font.otf);
+}
+@font-face {
+  font-family: nexa;
+  src: url(./assets/fonts/nexa_light.otf);
+}
+
+body, html {
+  background-color: #FFF8F8;
+  font-family: fertigo;
+  color: rgb(61, 57, 57);
+}
+
+
+.text-secondary {
+  color: rgb(145, 132, 132)
+}

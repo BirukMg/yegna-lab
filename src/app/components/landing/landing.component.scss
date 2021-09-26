@@ -1,0 +1,78 @@
+.landing {
+  width: 100%;
+  height: 100vh;
+  // background-image: url(../../../assets/img/bubbles.svg);
+  // background-size: 100% 100%;
+  // background-repeat: no-repeat;
+  // background-color: aqua; //remove
+
+  &__slider {
+    width: 50%;
+    font-family: fertigo;
+  }
+
+  &__desc {
+    width: 50%;
+    height: 100%;
+    font-family: fertigo;
+    // color: white; //remove
+    // background-color: black; //remove
+    h1 {
+      font-size: 6rem;
+      color: red;
+    }
+
+    &__letter-o {
+      background-color: red;
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+    }
+
+    &__urs {
+      color: red;
+      font-size: 4rem;
+    }
+
+    &__yours {
+      color: rgb(61, 57, 57);
+      font-size: 4rem;
+    }
+
+    button {
+      background-color: red;
+      color: #FFF;
+      border: none;
+      border-radius: 50px;
+      z-index: 1;
+    }
+
+  }
+
+  &__logo {
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__bg {
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.5;
+  }
+
+  &__slider-item {
+    animation: float 1s infinite alternate;
+  }
+}
+
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}

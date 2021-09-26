@@ -1,0 +1,41 @@
+.home-body-section {
+  &__desc {
+    width: 50%;
+  }
+
+  &__graphic {
+    width: 50%;
+    height: 15rem;
+    background-color: var(--color);
+    border-top-left-radius: 100rem;
+    border-bottom-left-radius: 100rem;
+  }
+
+  &__reverse {
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 100rem;
+    border-bottom-right-radius: 100rem;
+  }
+
+  &__tag {
+    background-color: rgba($color: #ff0000, $alpha: 0.3);
+    color: #ff0000;
+    border-radius: 20px;
+  }
+
+  &__img {
+    top: -30%;
+    left: 10%;
+    animation: float 3s infinite alternate;
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
