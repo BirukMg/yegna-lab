@@ -38,7 +38,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CarouselModule,
     FontAwesomeModule,
   ],
-  providers: [],
+  providers: [{ provide: 'BASE_IMAGE_URL', useValue: 'assets/img/' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -19,9 +19,23 @@ export class LandingComponent implements OnInit {
     dots: true,
     animateIn: 'animate__zoomIn',
     animateOut: 'animate__zoomOut',
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 1,
+      },
+      740: {
+        items: 1,
+      },
+      940: {
+        items: 1,
+      },
+    },
   };
 
-  constructor() {}
+  constructor(@Inject('BASE_IMAGE_URL') public baseImageUrl: string) {}
 
   ngOnInit(): void {}
 }

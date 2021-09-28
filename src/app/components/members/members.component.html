@@ -1,7 +1,7 @@
 <div class="members p-5 d-flex justify-content-between">
   <div class="members__card" *ngFor="let member of members">
     <div class="members__img">
-      <img [src]="'../../../assets/img/' + member.imgUrl" width="100%" alt="">
+      <img [src]="baseImageUrl + member.imgUrl" width="100%" alt="">
     </div>
     <div class="text-center text-secondary py-2">
       <h5>{{member.name}}</h5>

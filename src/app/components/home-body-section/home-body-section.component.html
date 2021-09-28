@@ -8,6 +8,6 @@
   </div>
 
   <div class="home-body-section__graphic position-relative" [ngClass]="{'home-body-section__reverse': data.reverse}" [style]="'--color:' + data?.bgUrl">
-   <img [src]="'../../../assets/img/' + data?.imgUrl" width="70%" class="position-absolute home-body-section__img" alt="">
+   <img [src]="baseImageUrl +  data?.imgUrl" width="70%" class="position-absolute home-body-section__img" alt="">
   </div>
 </div>

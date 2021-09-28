@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Member } from '../../models/members.model'
+import { Component, Inject, OnInit } from '@angular/core';
+import { Member } from 'src/app/models/members.model';
 
 @Component({
   selector: 'app-members',
@@ -30,7 +30,7 @@ export class MembersComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(@Inject('BASE_IMAGE_URL') public baseImageUrl: string) {}
 
   ngOnInit(): void {}
 }

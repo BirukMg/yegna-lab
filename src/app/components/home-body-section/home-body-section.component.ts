@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { HomeSection } from '../../models/home-section.model'
+import { Component, Inject, Input, OnInit } from '@angular/core';
+import { HomeSection } from 'src/app/models/home-section.model';
 
 @Component({
   selector: 'app-home-body-section',
@@ -8,7 +8,7 @@ import { HomeSection } from '../../models/home-section.model'
 })
 export class HomeBodySectionComponent implements OnInit {
   @Input() data: HomeSection;
-  constructor() {}
+  constructor(@Inject('BASE_IMAGE_URL') public baseImageUrl: string) {}
 
   ngOnInit(): void {}
 }

@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-highlight',
   templateUrl: './highlight.component.html',
-  styleUrls: ['./highlight.component.scss']
+  styleUrls: ['./highlight.component.scss'],
 })
 export class HighlightComponent implements OnInit {
+  constructor(@Inject('BASE_IMAGE_URL') public baseImageUrl: string) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
