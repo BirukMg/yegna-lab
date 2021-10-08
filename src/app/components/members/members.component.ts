@@ -9,24 +9,24 @@ import { Member } from 'src/app/models/members.model';
 export class MembersComponent implements OnInit {
   members: Member[] = [
     {
-      name: 'John Doe',
+      name: 'Amsalu Getachew',
       role: 'CEO',
-      imgUrl: 'men-member-1.jpg',
+      imgUrl: 'Amsalu Getachew.jpg',
     },
     {
-      name: 'Emma',
-      role: 'Marketing & sale',
-      imgUrl: 'women-member-1.jpg',
+      name: 'Amare Getachew',
+      role: 'Marketing manager',
+      imgUrl: 'Amare Getachew.jpg',
     },
     {
-      name: 'Aaliyah',
-      role: 'Finance Head',
-      imgUrl: 'women-member-2.jpg',
+      name: 'Senyet getu',
+      role: 'Senior Accountant',
+      imgUrl: 'Senyet getu.jpg',
     },
     {
-      name: 'Smith',
-      role: 'Associate Manager',
-      imgUrl: 'men-member-2.jpg',
+      name: 'Mohammed Sied',
+      role: 'Head of Finance and Administration',
+      imgUrl: 'Mohammed Sied.jpg',
     },
   ];
 

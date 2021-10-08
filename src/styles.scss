@@ -27,3 +27,20 @@ body, html {
 .text-secondary {
   color: rgb(145, 132, 132)
 }
+
+@media screen and (max-width: 830px) {
+  .body, html {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 622px) {
+  .body, html {
+    font-size: 8px !important;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .body, html {
+    font-size: 6px !important;
+  }
+}

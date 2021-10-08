@@ -18,3 +18,27 @@
     width: 30%;
   }
 }
+
+.small-width {
+    display: none;
+  }
+
+@media screen and (max-width: 570px) {
+  .large-width {
+    display: none;
+  }
+  .small-width {
+    display: block;
+  }
+
+  .highlight {
+    width: 50%;
+  }
+
+  .highlight__body-item {
+    width: auto;
+    img {
+      width: 30px;
+    }
+  }
+}

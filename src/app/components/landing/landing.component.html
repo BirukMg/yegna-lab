@@ -1,8 +1,8 @@
-<div class="landing d-flex justify-content-center align-items-center position-relative flex-wrap">
+<div class="landing d-flex justify-content-center align-items-center position-relative">
   <img [src]="baseImageUrl +  'yegna_logo.svg'" class="landing__logo position-absolute" alt="" width="5%">
   <img [src]="baseImageUrl +  'landing-bg.svg'" class="landing__bg position-absolute" alt="" width="100%">
   <img [src]="baseImageUrl +  'bubbles.svg'" class="landing__bg position-absolute" alt="" width="100%">
-  <div class="landing__slider">
+  <div class="landing__slider p-5">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide>
         <img class="landing__slider-item" [src]="baseImageUrl +  'chemicals.png'" alt="" width="70%">

@@ -1,3 +1,7 @@
+<h5 class="text-center">Our team</h5>
+<div class="d-flex justify-content-center">
+  <img [src]="baseImageUrl + 'members.jpg'" width="50%" class="members-img" alt="">
+</div>
 <div class="members p-5 d-flex justify-content-between">
   <div class="members__card" *ngFor="let member of members">
     <div class="members__img">
@@ -5,7 +9,9 @@
     </div>
     <div class="text-center text-secondary py-2">
       <h5>{{member.name}}</h5>
-      {{member.role}}
+      <span [ngClass]="{'small-size-font': member.role.length > 17}">
+        {{member.role}}
+      </span>
     </div>
   </div>
 </div>
