@@ -1,3 +1,25 @@
-<div class="our-client p-5 mt-3 d-flex justify-content-between align-items-center flex-wrap">
-  <div class="our-client__card m-2" *ngFor="let item of ','.repeat(9).split(',')"></div>
+<div class="our-client">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+      <div class="p-5 mt-3 d-flex justify-content-between align-items-center flex-wrap">
+        <div class="our-client__card m-2 d-flex justify-content-center align-items-center" *ngFor="let item of clientGroupOne">
+          <img [src]="baseImageUrl + item" alt="">
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="p-5 mt-3 d-flex justify-content-between align-items-center flex-wrap">
+        <div class="our-client__card m-2 d-flex justify-content-center align-items-center" *ngFor="let item of clientGroupTwo">
+          <img [src]="baseImageUrl + item" alt="">
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="p-5 mt-3 d-flex justify-content-between align-items-center flex-wrap">
+        <div class="our-client__card m-2 d-flex justify-content-center align-items-center" *ngFor="let item of clientGroupThree">
+          <img [src]="baseImageUrl + item" alt="">
+        </div>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
 </div>
