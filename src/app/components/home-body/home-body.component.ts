@@ -11,7 +11,7 @@ export class HomeBodyComponent implements OnInit {
     {
       title: 'For Research Labs',
       description:
-        'Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh.',
+        'We provide general laboratory equipment, as well as, full installation and maintenance to research labs of all sizes',
       tags: ['Hospitals', 'Hospitals'],
       bgUrl: '#61EBCA',
       imgUrl: 'lab.png',
@@ -20,7 +20,7 @@ export class HomeBodyComponent implements OnInit {
     {
       title: 'For Medical Faculties',
       description:
-        'Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh.',
+        'we provide general laboratory equipment for medical facilities, as well as, installation and setup ',
       tags: ['Hospitals', 'Hospitals'],
       bgUrl: '#FFCD78',
       imgUrl: 'hospital.png',
@@ -29,7 +29,7 @@ export class HomeBodyComponent implements OnInit {
     {
       title: 'For Educational Institute',
       description:
-        'Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh.',
+        'we provide chemicals, Chemistry equipment, and physics products, as well as, installation and setup for different educational institutes  ',
       tags: ['Hospitals', 'Hospitals'],
       bgUrl: '#3691FA',
       imgUrl: 'school-2.png',
