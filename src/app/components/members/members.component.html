@@ -6,12 +6,12 @@
   service.
 </p>
 <div class="d-flex justify-content-center mt-3">
-  <img [src]="baseImageUrl + 'members.jpg'" width="50%" class="members-img" alt="">
+  <img src="https://res.cloudinary.com/yegna-images/image/upload/v1634237140/members_mdftfi.jpg" loading="lazy" width="50%" class="members-img" [alt]="'yegna lab members'">
 </div>
 <div class="members p-5 d-flex justify-content-between">
   <div class="members__card" *ngFor="let member of members">
     <div class="members__img">
-      <img [src]="baseImageUrl + member.imgUrl" width="100%" alt="">
+      <img [src]="member.imgUrl" width="100%" loading="lazy" [alt]="member.name">
     </div>
     <div class="text-center text-secondary py-2">
       <h5>{{member.name}}</h5>

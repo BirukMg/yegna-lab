@@ -1,17 +1,29 @@
 <div class="landing d-flex justify-content-center align-items-center position-relative">
   <img [src]="baseImageUrl +  'yegna_logo.svg'" class="landing__logo position-absolute" alt="" width="5%">
   <img [src]="baseImageUrl +  'landing-bg.svg'" class="landing__bg position-absolute" alt="" width="100%">
-  <img [src]="baseImageUrl +  'bubbles.svg'" class="landing__bg position-absolute" alt="" width="100%">
   <div class="landing__slider p-5">
     <owl-carousel-o [options]="customOptions">
       <ng-template carouselSlide>
-        <img class="landing__slider-item" [src]="baseImageUrl +  'chemicals.png'" alt="" width="70%">
+        <a href="#">
+          <div class="p-lg-5">
+            <img class="landing__slider-item m-3" [src]="baseImageUrl +  'chemicals.svg'" alt="" width="100%">
+          </div>
+        </a>
       </ng-template>
       <ng-template carouselSlide>
-        <img class="landing__slider-item" [src]="baseImageUrl +  'model.png'" alt="" width="70%">
+        <a href="#">
+          <div class="p-lg-5">
+            <img class="landing__slider-item m-3" [src]="baseImageUrl +  'body-model.svg'" alt="" height="300px"
+              width="100%">
+          </div>
+        </a>
       </ng-template>
       <ng-template carouselSlide>
-        <img class="landing__slider-item" [src]="baseImageUrl +  'lab-tool.png'" alt="" width="70%">
+        <a href="#">
+          <div class="p-lg-5">
+            <img class="landing__slider-item m-3" [src]="baseImageUrl +  'laboratory-.svg'" alt="" width="100%">
+          </div>
+        </a>
       </ng-template>
     </owl-carousel-o>
   </div>

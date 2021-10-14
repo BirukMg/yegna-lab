@@ -22,16 +22,17 @@
       </p>
       <div>
         <i class="fa fa-facebook-square mx-1"></i>
-        <i class="fa fa-twitter-square mx-1"></i>
+        <img [src]="baseImageUrl +  'telegram.svg'" alt="" width="7%">
+        <i class="fa fa-telegram-alt " aria-hidden="true"></i>
         <i class="fa fa-instagram mx-1"></i>
         <i class="fa fa-linkedin mx-1"></i>
       </div>
     </div>
     <div class="footer__item">
-      <form>
-        <input type="email" name="email" class="form-control" placeholder="Your email">
-        <textarea class="form-control my-2" rows="3" placeholder="Say something"></textarea>
-        <button type="submit" class="btn btn-outline-light">Submit</button>
+      <h4>Contact Us</h4>
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <textarea class="form-control my-2" rows="3" formControlName="message" placeholder="What would you like to say" required></textarea>
+        <button type="submit"  class="btn btn-outline-light">Submit</button>
       </form>
     </div>
   </div>

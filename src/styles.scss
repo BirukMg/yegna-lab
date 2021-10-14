@@ -23,6 +23,11 @@ body, html {
   color: rgb(61, 57, 57);
 }
 
+::selection {
+	background-color: #F7ACAD;
+	color: #fff;
+}
+
 
 .text-secondary {
   color: rgb(145, 132, 132)

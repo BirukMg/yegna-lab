@@ -62,6 +62,7 @@
 
   &__slider-item {
     animation: tt 3s infinite alternate;
+    overflow: hidden;
   }
 }
 

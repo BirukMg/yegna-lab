@@ -16,6 +16,7 @@ import { OurClientComponent } from './components/our-client/our-client.component
 import { MembersComponent } from './components/members/members.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserAnimationsModule,
     CarouselModule,
     FontAwesomeModule,
+    ReactiveFormsModule,
   ],
   providers: [{ provide: 'BASE_IMAGE_URL', useValue: 'assets/img/' }],
   bootstrap: [AppComponent],

@@ -11,22 +11,26 @@ export class MembersComponent implements OnInit {
     {
       name: 'Amsalu Getachew',
       role: 'CEO',
-      imgUrl: 'Amsalu Getachew.jpg',
+      imgUrl:
+        'https://res.cloudinary.com/yegna-images/image/upload/v1634235332/Amsalu_Getachew_ij22qa.jpg',
     },
     {
       name: 'Amare Getachew',
       role: 'Marketing manager',
-      imgUrl: 'Amare Getachew.jpg',
+      imgUrl:
+        'https://res.cloudinary.com/yegna-images/image/upload/v1634236611/Amare_Getachew_admfoi.jpg',
     },
     {
       name: 'Senyet getu',
       role: 'Senior Accountant',
-      imgUrl: 'Senyet getu.jpg',
+      imgUrl:
+        'https://res.cloudinary.com/yegna-images/image/upload/v1634234506/Senyet_getu_ak31f0.jpg',
     },
     {
       name: 'Mohammed Sied',
       role: 'Head of Finance and Administration',
-      imgUrl: 'Mohammed Sied.jpg',
+      imgUrl:
+        'https://res.cloudinary.com/yegna-images/image/upload/v1634234646/Mohammed_Sied_conz5d.jpg',
     },
   ];
 
